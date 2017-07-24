@@ -1,7 +1,7 @@
 #generat next move
 def incMoveSet():
     global moveSet, moveNumber, depth
-    moveNumber, moveSet[0] += moveNumber+1, moveSet[0]+1
+    moveNumber, moveSet[0] = moveNumber+1, moveSet[0]+1
     for i in range(len(moveSet)):
         if moveSet[i] == 6:
             moveSet[i] = 0
